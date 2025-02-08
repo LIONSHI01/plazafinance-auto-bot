@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  node-app:
+    container_name: plaza_finance_bot_08
+    build: .
+    volumes:
+      - .:/usr/src/app
+    environment:
+      NODE_ENV: development
+        - .env
+    command: /bin/sh -c "node index.js"
+    restart: always
