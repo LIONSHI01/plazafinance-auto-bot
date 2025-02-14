@@ -468,10 +468,10 @@ setInterval(async () => {
   );
   await processWallets();
 
-  const delayInMs = 6 * 60 * 60 * 1000;
+  const delayInMs = 24 * 60 * 60 * 1000;
   const nextRunTime = getNextRunTime(delayInMs);
   console.log(chalk.green(`流程已完成。下次运行时间: ${nextRunTime}`));
-}, 6 * 60 * 60 * 1000);
+}, 24 * 60 * 60 * 1000);
 
 // 启动时立即运行
 (async () => {
@@ -480,7 +480,7 @@ setInterval(async () => {
   );
   await processWallets();
 
-  const delayInMs = 6 * 60 * 60 * 1000;
+  const delayInMs = 24 * 60 * 60 * 1000;
   const nextRunTime = getNextRunTime(delayInMs);
   console.log(chalk.green(`流程已完成。下次运行时间: ${nextRunTime}`));
 })();
